@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &621425305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621425306}
+  - component: {fileID: 621425307}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621425306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621425305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.304184, y: 126.3879, z: 26.162735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &621425307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621425305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b340c3ff4b65b429fd998788f307d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: -1000
+  max: 1000
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,31 +365,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 125.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.64278764
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.76604444
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 643754071617886201, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -356,6 +401,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
+--- !u!1 &1109481550886036548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 262548285335440707, guid: 5c497da9a7a74c04899374fb44b091c2, type: 3}
+  m_PrefabInstance: {fileID: 1109481550886036547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109481550886036549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109481550886036548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e11a51ccc610c4b9afaf14c50a1627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1109481550886036550}
+  direction: {x: 0, y: 0, z: 0}
+  speed: 100
+  maxSpeed: 500
+  targetScript: {fileID: 0}
+  target: {fileID: 0}
+--- !u!54 &1109481550886036550
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109481550886036548}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0.75
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2869730187626041011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,6 +494,10 @@ PrefabInstance:
     - target: {fileID: 3103610949597103350, guid: 9f8ec9cb0ba648747a1141f6c28282b5, type: 3}
       propertyPath: m_Name
       value: 13897_Sci-Fi_Fighter_Ship_v1_l1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103610949597103350, guid: 9f8ec9cb0ba648747a1141f6c28282b5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8ec9cb0ba648747a1141f6c28282b5, type: 3}
