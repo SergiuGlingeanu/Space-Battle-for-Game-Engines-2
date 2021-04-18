@@ -18,8 +18,6 @@ public class PathFollowing : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        target = GameObject.Find("Target").transform;
-        targetScript = GameObject.Find("Target").GetComponent<TargetChangeLocation>();
         targetScript.ChangePlace();
 
         GetNewAngle();
@@ -32,7 +30,7 @@ public class PathFollowing : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddRelativeForce(Vector3.forward * speed, ForceMode.Acceleration);
+        rb.AddRelativeForce(Vector3.forward * speed, ForceMode.Force);
 
         if (rb.velocity.z >= maxSpeed)
         {
