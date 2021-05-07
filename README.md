@@ -10,4 +10,4 @@ I plan to make the camera follow the battle from a distant point to show the who
 
 The smaller ships will use a swarming behaviour, while the big ships will try to destroy the planet and shoot down the smaller ships.
 
-![Video Link]https://youtu.be/C0zZQbWycrg
+[Link to video](https://youtu.be/C0zZQbWycrg)
